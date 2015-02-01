@@ -1,0 +1,535 @@
+html {
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
+}
+
+//Import Bootstrap Responsive and Font-Awesome Icons
+@import "bootstrap/bootstrap.less";
+@import "font-awesome/font-awesome.less";
+ 
+
+//Import Fonts
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+
+// ----------------------------------------------- MAIN LESS ------------------------------------------------------------
+
+//.template {
+    /* rules for mobile vertical (< 480) */
+
+    //@media (min-width: @screen-hs-min) {
+       /* rules for mobile horizontal (480 > 768)  */
+    //}
+    //@media (min-width: @screen-sm-min) {
+       /* rules for tablet (768 > 992) */
+    //}
+    //@media (min-width: @screen-md-min) {
+       /* rules for desktop (992 > 1200) */
+    //}
+    //@media (min-width: @screen-lg-min) {
+       /* rules for large (> 1200) */
+    //}
+//}
+
+
+
+html {
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: left;
+    margin-top: 1em;
+}
+
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+body {
+    //background: url('../img/montana.jpg') center center;
+    //background-attachment: fixed;
+    //background-size: cover;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.img-thumbnail {
+    border-radius: 0;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.headerinfo {
+    margin-bottom: 2.5em; 
+    margin-left: 4em;
+    margin-right: 4em;
+    text-align: center;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container{
+    .row{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+
+
+//Styling of QTip Info Directly After QTip Divs
+.qtipMaterial {
+    display: none !important;
+    //visibility: hidden;
+    clear: both;
+    
+    h1 {
+        font-size: 0.5em;
+        text-align: right;
+        color: #0e0;
+    }
+    p {
+        font-size: 0.5em;
+        
+    }
+    
+    
+}
+
+
+.customqtipstyle .qtip-content {
+    
+    h1 {
+        color:#522D80;
+        font-size: 2em;
+        margin-top: 0px;
+    }
+    p {
+        color:#332B7F;
+    }
+    
+}
+
+.mainbus{
+    width: 90%;
+    height: 80px;
+    background-color: #000;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+    
+    h1 {
+        text-align: center;
+        color: #fff;
+        padding-top: 0.5em;
+    }
+    
+    p {
+        position: absolute;
+        font-size: 1em;
+        color: #bbb;
+    }
+    
+}
+
+.feeder {
+    margin: 0 auto;
+    color: #276A7F;
+    background-color: #276A7F;
+    width: 35px;
+    
+    h1 {
+        color: #276A7F;
+    }
+    #battery {
+        width: 4em;
+        height: 4em;
+        position: relative;
+        left: 7em;
+        top: 9.8em;
+    }
+    #solar {
+        width: 4em;
+        height: 4em;
+        position: relative;
+        left: -9em;
+        top: 7.5em;
+    }
+    .wind {
+        width: 4em;
+        height: 5em;
+        position: relative;
+        left: 9em;
+        top: 18.2em;
+    }
+}
+
+.fone {
+    background-color: #fff;
+}
+
+.ftwo {
+    border-left: dashed 3px #000;
+    border-right: dashed 3px #000;
+}
+
+.fthree {
+    background-color: #fff;
+    border-right: dashed 3px #000;
+}
+
+
+.inline-block-center {
+  text-align: center;
+}
+.inline-block-center div {
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+
+
+
+.pmuhighlight {
+        padding: 10px;
+        background-color: #cee2f6;
+    
+        .pmuimage {
+            width: 100%;
+            height: 120px;
+            background-image: url('../img/selpmu.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: inherit;
+            margin: inherit;
+        }
+    
+        .col-md-8 {
+            padding: inherit;
+            margin: inherit;
+            min-height: 120px;
+            background-color: white;
+            padding-top: 0.75em;
+        }
+        
+        h1 { 
+            position: absolute;
+            top: 20px;
+            left: 0.75em;
+            color: #fff;
+            font-size: 3em;
+        }
+        
+        h5 {
+            font-size: 2em;
+            font-style: normal;
+            margin-left: 20px;
+        }
+        h6 {
+            font-size: 2em;
+            font-style: normal;
+            margin-left: 20px;
+        }
+        
+}
+
+
+
+
+
+
+
+
+#backbutton {
+    margin: 5em;
+}
+
+
+
+.loadbuttons {
+    text-align: center;
+}
+
+.systemDetail {
+    margin: 2em 5em;
+}
+
+
+
+.systemtime {
+    font-size: 4em;
+}
+
+hr {
+    margin: 1.15em;
+}
+
+
+
+
+
+.typeOfDG {
+    color: #444;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.C5AbatterySOC {
+    width: 50%;
+}
+
+#4kVbatteryarrow {
+
+}
+
+.batteryarrow {
+    position: absolute;
+    top: 11em;
+    left: 18.5em;
+}
+
+.windarrow {
+    position: absolute;
+    top: 24em;
+    left: 18.5em;
+}
+
+.solararrow {
+    position: absolute;
+    top: 17.8em;
+    left: 9em;
+}
+
+.batterytext {
+    font-size: 0.85em;
+    position: absolute;
+    top: 17.5em;
+    left: 26em;
+}
+
+.windtext {
+    font-size: 0.85em;
+    position: absolute;
+    top: 32.5em;
+    left: 29.5em;
+}
+
+.solartext {
+    font-size: 0.85em;
+    position: absolute;
+    top: 25.5em;
+    left: 8.3em;
+}
+
+.weatherdata {
+    padding-left: 4em;
+    padding-top: 1em;
+}
+
+
+
+
+#transformer {
+    position: absolute;
+    left: 9.5em;
+    top: 1.1em;
+}
+
+//Override the column width
+.col-md-11 {
+    width: 95.5%;
+}
+
+.col-md-1 {
+    width: 4.5%;
+}
+
+#utilitylabel {
+    font-size: 2.5em;
+    text-align: left;
+    margin-top: 0.7em;
+    margin-left: 0.5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.bigFontA {
+    font-size: 12em;
+}
+
+.weathericon {
+    position: absolute;
+    left: 1.1em;
+    top: 0.3em;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 0em;
+    font-size: 2em;
+}
+
+.loadlabel {
+    position: absolute;
+    top: 8.5em;
+    left: 16.5em;
+    font-size: 1em;
+    color: #555555;
+}
+
+.loadvalue {
+    position: absolute;
+    top: 2em;
+    left: 7em;
+    font-size: 2.4em;
+}
+
+#messageForConfig2 {
+    text-align: center;
+    color: #555555;
+}
+
+.loadtext {
+    font-size: 0.85em;
+    position: absolute;
+    top: 10em;
+    left: 6em;
+}
+
+.loadarrow {
+    position: absolute;
+    top: 5em;
+    left: 8.9em;
+}
+
+#circuitload {
+        width: 4em;
+        height: 4em;
+        position: absolute;
+        left: 4.8em;
+        top: 4em;
+}
+
+
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0.6em;
+    font-size: 2.9em;
+    color: #2E7D97;
+}
+
+
+
+
+
+#pause {
+    position: absolute;
+    top: 1.7em;
+    left: 47em;
+}
+
+#play {
+    position: absolute;
+    top: 1.7em;
+    left: 56em;
+}
+
+#totalClemsonLoad {
+    position: absolute;
+    left: 66%;
+    top: 0.3em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+#cicuitlabel5C {
+    top: 70%;
+    left: 90%;
+}
+
+#cicuitlabel5B {
+    top: 70%;
+    left: 60%;
+}
+
+#cicuitlabel5A {
+    top: 70%;
+    left: 30.8%;
+}
+
+#cicuitlabel4 {
+    top: 70%;
+    left: 1.5%;
+}
+
+#cicuitlabel3 {
+    top: 8%;
+    left: 90%;
+}
+
+#cicuitlabel2 {
+    top: 8%;
+    left: 60.5%;
+}
+
+#cicuitlabel1 {
+    top: 8%;
+    left: 31%;
+}
+
+#cicuitlabel4kV {
+    top: 8%;
+    left: 1.2%;
+}
+
+#RTPISlogo {
+    position: absolute;
+    top: 1em;
+    left: 90%;
+
+}
+
+#clemsonlogo {
+    position: absolute;
+    top: 1em;
+    left: 2%;
+
+}

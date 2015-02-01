@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Clemson Microgrid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/styles.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/adapters/standalone-framework.js"></script> -->
+    <!--<script type="text/javascript" src="js/customjavascript.js"></script> -->
+        
+</head>
+    
+<body>
+      
+<div class="container-fluid">
+    
+<div class="row">
+<div class="headerinfo">
+    <h1>Clemson Microgrid</h1>
+    <img id="RTPISlogo" src="img/rtpislogo.png" style="height: 100px; width: 100px;"></img>
+    <img id="clemsonlogo" src="img/clemson.png" style="height: 60px; width: 250px;"></img>
+
+    
+    <hr />
+</div>
+</div>
+
+
+
+
+<div class="row nopadding inline-block-center">
+    <div class="col-md-3 fone">
+        <div class="feeder">
+            
+            <p class="loadtext" id="4kVloadtext">000.00 kW</p>
+            <img class="loadarrow" id="4kVloadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+            <div class="qtipMaterial">
+                    <h1>4.16 kV East Substation</h1>
+                    <hr />
+                    <p>
+                        Aqua Office 1 & 2 -
+                        Band Field -
+                        Barnette Hall -
+                        Bottom 1 & 2 -
+                        Brooks Parking -
+                        Cooper Library -
+                        Freeman Hall -
+                        Golf 1 - 
+                        Golf Maintence -
+                        Greenhouses -
+                        Hyd Lab 1 & 2 -
+                        Kinard Lab -
+                        Lowry Hall - 
+                        Lumber Storage -
+                        Machine Shed -
+                        Martin Hall -
+                        Mauldin Hall -
+                        Mower Wash -
+                        Newman Hall -
+                        Poole #1 - 4 -
+                        Pres Park -
+                        Sheep Barn -
+                        STG 0326 -
+                        Tool House -
+                        Turf Research 
+                    </p>
+
+                </div>
+
+            
+            <p class="batterytext" id="4kVbatterytext">000.00 kW</p>
+            <img class="batteryarrow" id="4kVbatteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="4kVbatterynum">Number of Battery Banks: 1</p>
+                    <p id="4kVbatterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+
+            <p class="windtext" id="4kVwindtext">000.00 kW</p>
+            <img class="windarrow" id="4kVwindarrow" src="img/ArrowLeft.gif">
+            <img id="4kVwindturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="4kVwindnum">Total Wind Turbines: 1</p>
+                    <p id="4kVwindcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+            
+            <p class="solartext" id="4kVsolartext">000.00 kW</p>
+            <img class="solararrow" id="4kVsolararrow" src="img/arrowright.gif">
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="4kVsolarnum">Total Solar Panels: 1</p>
+                    <p id="4kVsolararea">Total Surface Area: 1 m^2</p>
+                    <p id="4kVsolarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+                
+        </div>
+    </div>
+    <div class="col-md-3 ftwo">
+        <div class="feeder">
+            
+            <p class="loadtext" id="C1loadtext">000.00 kW</p>
+            <img class="loadarrow" id="C1loadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+                <div class="qtipMaterial">
+                    <h1>12kV Circuit 1</h1>
+                    <hr />
+                    <p>Redfern Health Center</p>
+                    <p>Edwards Hall</p>
+                    <p>Schilleter Hall</p>
+                    <p>Vickery Hall</p>
+                    <p>Jordan Hall</p>
+                    <p>Kinnard Annex</p>
+                    <p>Long Hall</p>
+                    <p>Sikes Hall</p>
+                    <p>Alumni Center</p>
+                </div>
+            
+            <p class="batterytext" id="C1batterytext">000.00 kW</p>
+            <img class="batteryarrow" id="C1batteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="c1batterynum">Number of Battery Banks: 1</p>
+                    <p id="c1batterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+
+            <p class="windtext" id="C1windtext">000.00 kW</p>
+            <img class="windarrow" id="C1windarrow" src="img/ArrowLeft.gif">
+            <img id="C1windturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="c1windnum">Total Wind Turbines: 1</p>
+                    <p id="c1windcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+
+            <p class="solartext" id="C1solartext">000.00 kW</p>
+            <img class="solararrow" id="C1solararrow" src="img/arrowright.gif">
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="c1solarnum">Total Solar Panels: 1</p>
+                    <p id="c1solararea">Total Surface Area: 1 m^2</p>
+                    <p id="c1solarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+
+
+        </div>
+
+    </div>    
+    <div class="col-md-3 fthree">
+        <div class="feeder">
+
+            <p class="loadtext" id="C2loadtext">000.00 kW</p>
+            <img class="loadarrow" id="C2loadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+                <div class="qtipMaterial">
+                    <h1>12kV Circuit 2</h1>
+                    <hr />
+                    <p>Poole Ag Building</p>
+                    <p>Calhoun Courts</p>
+                    <p>Lever Hall</p>
+                    <p>Smith Hall</p>
+                    <p>President's Home</p>
+                    <p>Byrnes Hall</p>
+                    <p>Manning Hall</p>
+                </div>
+            
+            <p class="batterytext" id="C2batterytext">000.00 kW</p>
+            <img class="batteryarrow" id="C2batteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="c2batterynum">Number of Battery Banks: 1</p>
+                    <p id="c2batterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+            
+            <p class="windtext" id="C2windtext">000.00 kW</p>
+            <img class="windarrow" id="C2windarrow" src="img/ArrowLeft.gif">
+            <img id="C2windturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="c2windnum">Total Wind Turbines: 1</p>
+                    <p id="c2windcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+            
+            <p class="solartext" id="C2solartext">000.00 kW</p>
+            <img class="solararrow" id="C2solararrow" src="img/arrowright.gif">   
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="c2solarnum">Total Solar Panels: 1</p>
+                    <p id="c2solararea">Total Surface Area: 1 m^2</p>
+                    <p id="c2solarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+
+
+        </div>
+    </div>
+    <div class="col-md-3 ffour">
+        <div class="feeder">
+            
+            <p class="loadtext" id="C3loadtext">000.00 kW</p>
+            <img class="loadarrow" id="C3loadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+                <div class="qtipMaterial">
+                    <h1>4.16 kV West Substation</h1>
+                    <hr />
+                    <p>
+                        213 Martin -
+                        Benet Hall -
+                        BOTTOMS 5 -
+                        BOTTOMS 6 -
+                        BOTTOMS 7 -
+                        Bowman Field -
+                        Brackett Hall -
+                        C12 Parking -
+                        Canteen 307 & 308 -
+                        Clemson House -
+                        Cope Hall -
+                        Corps Antenna -
+                        Corps PS -
+                        Corps Trailer -
+                        Daniel A & B -
+                        Dillard Building -
+                        Earle Hall -
+                        East Intramural Fields -
+                        Fernow Street Café -
+                        Geer Hall -
+                        Godfrey Hall -
+                        Greenhouses 1 & 2 -
+                        Harcombe Dinning Hall -
+                        Hardin Hall -
+                        Highway 93 Traffic Signals -
+                        Holmes/ Mccabe Hall -
+                        Holtzendorf Hall -
+                        Hunter #1 & 2 -
+                        Indoor Tennis Courts -
+                        Johnstone A -
+                        Lt Behind Earle -
+                        Moorman -
+                        Nu St Lt -
+                        Olin Hall -
+                        Package Boiler -
+                        Parking 3 -
+                        R2 Parking -
+                        Riggs Field - Soccer Stadium -
+                        Sanders Hall -
+                        Sirrine Hall -
+                        Sloan Traffic Circle Lights -     
+                        Tennis Court Lights -
+                        Tillman Hall -
+                        Trustee House -
+                        University Union -
+                        Visitor Center -
+                        Wannamaker -
+                        WWTP -
+                        Young Hall
+                    </p>
+                </div>
+            <p class="batterytext" id="C3batterytext">000.00 kW</p>
+            <img class="batteryarrow" id="C3batteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="c3batterynum">Number of Battery Banks: 1</p>
+                    <p id="c3batterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+
+            <p class="windtext" id="C3windtext">000.00 kW</p>
+            <img class="windarrow" id="C3windarrow" src="img/ArrowLeft.gif">
+            <img id="C3windturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="c3windnum">Total Wind Turbines: 1</p>
+                    <p id="c3windcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+            
+            <p class="solartext" id="C3solartext">000.00 kW</p>
+            <img class="solararrow" id="C3solararrow" src="img/arrowright.gif">
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="c3solarnum">Total Solar Panels: 1</p>
+                    <p id="c3solararea">Total Surface Area: 1 m^2</p>
+                    <p id="c3solarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+               
+
+        </div>
+    </div>
+</div>
+    
+<div class="row nopadding">
+    <div class="col-md-1">
+        <p id="utilitylabel">Utility</p>
+        <img id="transformer" width="70px" height="70px" src="img/transformer.png">
+    </div>
+    <div class="col-md-11 customGridWidth">
+        
+        <div class="mainbus">
+        
+            <p id="cicuitlabel4kV">4kV East</p>
+            <p id="cicuitlabel1">12kV C1</p>
+            <p id="cicuitlabel2">12kV C2</p>
+            <p id="cicuitlabel3">4kV West</p>
+            <p id="cicuitlabel4">12kV C4</p>
+            <p id="cicuitlabel5A">12kV C5A</p>
+            <p id="cicuitlabel5B">12kV C5B</p>
+            <p id="cicuitlabel5C">12kV C5C</p>
+            
+            
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Select A Configuration
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#" id="config1">Configuration 1</a></li>
+                <li><a href="#" id="config2">Configuration 2</a></li>
+                <li><a href="#" id="config3">Configuration 3</a></li>
+                <li><a href="#" id="config4">Configuration 4</a></li>
+                <li><a href="#" id="config5">Configuration 5</a></li>
+                <li><a href="#" id="config6">Configuration 6</a></li>
+            </ul>
+        </div>
+    
+        <button type="button" id="pause" class="btn btn-primary" data-toggle="button" autocomplete="off">
+            Pause
+        </button>
+    
+        <button type="button" id="play" class="btn btn-primary" data-toggle="button" autocomplete="off">
+            Play
+        </button>
+            <h1></h1>
+            <p id="totalClemsonLoad">Total Load: <span id="totalClemsonLoadNumber">0000.0</span> MW</p>
+        </div>
+        
+    </div>
+</div> 
+    
+    
+<div class="row nopadding inline-block-center">
+    <div class="col-md-3 fone">
+        <div class="feeder">
+            
+            <p class="loadtext" id="C4loadtext">000.00 kW</p>
+            <img class="loadarrow" id="C4loadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+                <div class="qtipMaterial">
+                    <h1>12 kV Circuit 4</h1>
+                    <hr />
+                    <p>Academic Success Center</p>
+                    <p>Lee Hall Annex</p>
+                    <p>Hendrix Student Center</p>
+                    <p>Daniel Hall</p>
+                    <p>Barre Hall</p>
+                    <p>McAdams Hall</p>
+                    <p>Riggs Hall</p>
+                    <p>Rhodes Research</p>
+                    <p>Lee Hall</p>
+                    <p>Stadium Suites</p>
+                    <p>Rhodes Hall Annex</p>
+                </div>        
+    
+            <p class="batterytext" id="C4batterytext">000.00 kW</p>
+            <img class="batteryarrow" id="C4batteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="c4batterynum">Number of Battery Banks: 1</p>
+                    <p id="c4batterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+            
+            <p class="windtext" id="C4windtext">000.00 kW</p>
+            <img class="windarrow" id="C4windarrow" src="img/ArrowLeft.gif">
+            <img id="C4windturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="c4windnum">Total Wind Turbines: 1</p>
+                    <p id="c4windcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+
+            <p class="solartext" id="C4solartext">000.00 kW</p>
+            <img class="solararrow" id="C4solararrow" src="img/arrowright.gif">
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="c4solarnum">Total Solar Panels: 1</p>
+                    <p id="c4solararea">Total Surface Area: 1 m^2</p>
+                    <p id="c4solarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+
+
+        </div>
+    </div>
+    <div class="col-md-3 ftwo">
+        <div class="feeder">
+            
+            <p class="loadtext" id="C5Aloadtext">000.00 kW</p>
+            <img class="loadarrow" id="C5Aloadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+                <div class="qtipMaterial">
+                    <h1>12 kV Circuit 5A</h1>
+                    <hr />
+                    <p>Strom Thurmond</p>
+                    <p>Brooks Center</p>
+                    <p>East Chiller Facility</p>
+                    <p>Life Sciences Building</p>
+                </div>
+            
+            <p class="batterytext" id="C5Abatterytext">000.00 kW</p>
+            <img class="batteryarrow" id="C5Abatteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="c5Abatterynum">Number of Battery Banks: 1</p>
+                    <p id="c5Abatterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+
+            <p class="windtext" id="C5Awindtext">000.00 kW</p>
+            <img class="windarrow" id="C5Awindarrow" src="img/ArrowLeft.gif">
+            <img id="C5Awindturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="c5Awindnum">Total Wind Turbines: 1</p>
+                    <p id="c5Awindcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+            
+            <p class="solartext" id="C5Asolartext">000.00 kW</p>
+            <img class="solararrow" id="C5Asolararrow" src="img/arrowright.gif">
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="c5Asolarnum">Total Solar Panels: 1</p>
+                    <p id="c5Asolararea">Total Surface Area: 1 m^2</p>
+                    <p id="c5Asolarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+
+
+        </div>
+    </div>    
+    <div class="col-md-3 fthree">
+        <div class="feeder">
+            
+            <p class="loadtext" id="C5Bloadtext">000.00 kW</p>
+            <img class="loadarrow" id="C5Bloadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+                <div class="qtipMaterial">
+                    <h1>12 kV Circuit 5B</h1>
+                    <hr />
+                    <p>Biosystems Research Complex</p>
+                    <p>Godley-Snell</p>
+                    <p>Band Practice Field</p>
+                    <p>Service and Support</p>
+                    <p>Hinson CWP</p>
+                    <p>Fluor Daniel</p>
+                    <p>Harris A. Smith</p>
+                    <p>Rugby Fields</p>
+                    <p>Rowing Boathouses</p>
+                    <p>Pump Station</p>
+                    <p>Littlejohn</p>
+                    <p>Intramural Fields</p>
+                    <p><b>Memorial Stadium</b></p>
+                    <p>Fike Recreation</p>
+                </div>
+            
+            <p class="batterytext" id="C5Bbatterytext">000.00 kW</p>
+            <img class="batteryarrow" id="C5Bbatteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="c5Bbatterynum">Number of Battery Banks: 1</p>
+                    <p id="c5Bbatterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+            
+            <p class="windtext" id="C5Bwindtext">000.00 kW</p>
+            <img class="windarrow" id="C5Bwindarrow" src="img/ArrowLeft.gif">
+            <img id="C5Bwindturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="c5Bwindnum">Total Wind Turbines: 1</p>
+                    <p id="c5Bwindcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+            
+            <p class="solartext" id="C5Bsolartext">000.00 kW</p>
+            <img class="solararrow" id="C5Bsolararrow" src="img/arrowright.gif">
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="c5Bsolarnum">Total Solar Panels: 1</p>
+                    <p id="c5Bsolararea">Total Surface Area: 1 m^2</p>
+                    <p id="c5Bsolarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+
+
+        </div>
+    </div>
+    <div class="col-md-3 ffour">
+        <div class="feeder">
+            
+            <p class="loadtext" id="C5Cloadtext">000.00 kW</p>
+            <img class="loadarrow" id="C5Cloadarrow" src="img/ArrowLeft.gif">
+            <img id="circuitload" class="elementWithTooltip" src="img/load.png" />
+            
+            <div class="qtipMaterial">
+                <h1>12 kV Circuit 5C</h1>
+                <hr />
+                <p>Lightsey Bridge Apartments</p>
+            </div>
+            
+            <p class="batterytext" id="C5Cbatterytext">000.00 kW</p>
+            <img class="batteryarrow" id="C5Cbatteryarrow" src="img/ArrowLeft.gif">
+            <img id="battery" class="elementWithTooltip" src="img/battery.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Battery Info</h1>
+                    <hr />
+                    <p id="c5Cbatterynum">Number of Battery Banks: 1</p>
+                    <p id="c5Cbatterycapacity">Total Capcity: 1 kW</p>
+                    <p class="typeOfDG">Size: 18.36 kWh @ 340 Ah for 5 Hours</p>
+                </div>
+            
+            <p class="windtext" id="C5Cwindtext">000.00 kW</p>
+            <img class="windarrow" id="C5Cwindarrow" src="img/ArrowLeft.gif">
+            <img id="C5Cwindturbine" class="elementWithTooltip wind" src="img/wind.png" />
+            
+              <div class="qtipMaterial">
+                    <h1>Wind Info</h1>
+                    <hr />
+                    <p id="c5Cwindnum">Total Wind Turbines: 1</p>
+                    <p id="c5Cwindcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 25 kW Turbines at 30m with Vmin = 2.7 m/s</p>
+                </div>
+            
+            <p class="solartext" id="C5Csolartext">000.00 kW</p>
+            <img class="solararrow" id="C5Csolararrow" src="img/arrowright.gif">
+            <img class="elementWithTooltip" id="solar" src="img/solar.png" />
+            
+                <div class="qtipMaterial">
+                    <h1>Solar Info</h1>
+                    <hr />
+                    <p id="c5Csolarnum">Total Solar Panels: 1</p>
+                    <p id="c5Csolararea">Total Surface Area: 1 m^2</p>
+                    <p id="c5Csolarcapacity">Total Capacity: 1 kW</p>
+                    <p class="typeOfDG">Size: 20 kW PV Array - 190W Modules</p>
+                </div>
+            
+            <h1>f<br>e<br>e<br>d<br>e<br>r<br></h1>
+
+
+        </div>
+    </div>
+</div>
+    
+    
+
+    
+    
+
+ 
+</div>
+
+    
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+
+    
+<div class="container-fluid">
+
+    
+    <!--
+    <div class="row">
+        <div class="alert alert-success systemDetail" role="alert">
+            <p><b>System Info:</b> The microgrid is currently being supplied with 100% clean energy.</p>
+        </div>
+    </div>
+    -->
+    
+    <div class="row">
+        <div class="col-md-6"><h1><span class="systemtime">10:00:00</span><span id="ampm"> </span></h1></div>
+
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">4kV East</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="4kVload">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="4kVsolarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="4kVwindpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="4kVbatterypower">0</span>%</p>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="4kVbatterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Circuit 1</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="C1load">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="C1solarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="C1windpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="C1batterypower">0</span>%</p>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="C1batterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        <div class="row">
+        <div class="col-md-6">
+                <h4><b>Configuration: </b><span id="configname">Optimized</span> <b> </h4>
+                <h4><b>Season: </b> <span id="configseason">Fall</span></h4>
+            <p id="messageForConfig2">---</p>
+
+
+        </div>
+
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Circuit 2</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="C2load">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="C2solarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="C2windpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="C2batterypower">0</span>%</p>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="C2batterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">4kV West</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="C3load">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="C3solarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="C3windpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="C3batterypower">0</span>%</p>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="C3batterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    
+        <div class="row">
+        
+        <div class="col-md-2">
+                <i class="fa fa-cloud weathericon" style="font-size: 10em;"></i>
+        </div>
+        <div class="col-md-4 weatherdata"> 
+            <h2><b>Temperature:  &nbsp;</b><span id="temp">0</span> F</h2>
+            <h2><b>Wind Speed:  &nbsp;</b> <span id="windspeed">0</span> m/s </h2>
+            <h2><b>Irradiance:  &nbsp;</b> <span id="irradiance">0</span> W/m^2</h2>
+        </div>
+        
+        <!--
+
+        <div id="stackedbarchart" style="min-width: 310px; max-width: 800px; height: 200px; margin: 0 auto"></div>
+
+        <div class="col-md-3">	
+            <div id="container-speed" style="width: 300px; height: 130px; text-align: center;"></div>
+        </div>
+        <div class="col-md-3">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" area-valuemin="0" aria-valuemax="100" style="width: 45%">
+                    <span class="sr-only">45% Complete</span>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Circuit 4</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="C4load">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="C4solarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="C4windpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="C4batterypower">0</span>%</p>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="C4batterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Circuit 5A</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="C5Aload">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="C5Asolarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="C5Awindpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="C5Abatterypower">0</span>%</p>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="C5AbatterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+        <div class="row">
+
+        <div class="col-md-2">
+                <i class="fa fa-recycle weathericon" style="font-size: 10em;"></i>
+        </div>
+        <div class="col-md-4 weatherdata"> 
+            <h2><b>CO2 Emissions Saved:  &nbsp;</b><span id="co2emissions">778</span> Lbs</h2>
+            <h2><b>NO Emissions Saved:  &nbsp;</b> <span id="noemissions">0.5</span> Lbs</h2>
+            <h2><b>SO2 Emissions Saved:  &nbsp;</b> <span id="so2emissions">1.5</span> Lbs</h2>
+        </div>
+            <!--
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" id="totalSolarPercent" style="width: 35%">
+                </div>
+                <div class="progress-bar progress-bar-warning progress-bar-striped" id="totalWindPercent" style="width: 20%">
+                </div>
+                <div class="progress-bar progress-bar-danger progress-bar-striped" id="totalBatteryPercent" style="width: 10%">
+                </div>
+            </div>
+            -->
+
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Circuit 5B</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="C5Bload">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="C5Bsolarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="C5Bwindpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="C5Bbatterypower">0</span>%</p> 
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="C5BbatterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Circuit 5C</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="loadvalue"><span id="C5Cload">0</span>&nbsp;kW</p>
+                    <p><b>Solar Power: </b><span id="C5Csolarpower">0</span>%</p>
+                    <p><b>Wind Power: </b><span id="C5Cwindpower">0</span>%</p>  
+                    <p><b>Battery Power: </b><span id="C5Cbatterypower">0</span>%</p>
+                    <div class="row">
+                    <div class="col-md-2">
+                        <p><b>SOC</b></p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="progress" style="margin-bottom: 0.4em">
+                            <div class="progress-bar progress-bar-striped active" id="C5CbatterySOC" role="progressbar">50%</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+    
+    <div class="row">
+        <div id="loadchart" style="min-width: 310px; height: 400px; margin: 2em 2em;"></div>
+    </div>
+    
+    <div class="row loadbuttons">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" id="lbtntotal">Total</button>
+        <button type="button" class="btn btn-default" id="lbtn4kVSub">4kV East</button>
+        <button type="button" class="btn btn-default" id="lbtncircuit1">Circuit 1</button>
+        <button type="button" class="btn btn-default" id="lbtncircuit2">Circuit 2</button>
+        <button type="button" class="btn btn-default" id="lbtncircuit3">4kV West</button>
+        <button type="button" class="btn btn-default" id="lbtncircuit4">Circuit 4</button>
+        <button type="button" class="btn btn-default" id="lbtncircuit5a">Circuit 5A</button>
+        <button type="button" class="btn btn-default" id="lbtncircuit5b">Circuit 5B</button>
+        <button type="button" class="btn btn-default" id="lbtncircuit5c">Circuit 5C</button>
+    </div>
+        
+    </div>
+    
+<hr />
+<hr />
+<hr />
+
+    <div class="row">
+        <div id="solarchart" style="min-width: 310px; height: 400px; margin: 2em 2em;"></div>
+    </div>
+    
+    <div class="row loadbuttons">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" id="sbtntotal">Total</button>
+        <button type="button" class="btn btn-default" id="sbtn4kVSub">4kV East</button>
+        <button type="button" class="btn btn-default" id="sbtncircuit1">Circuit 1</button>
+        <button type="button" class="btn btn-default" id="sbtncircuit2">Circuit 2</button>
+        <button type="button" class="btn btn-default" id="sbtncircuit3">4kV West</button>
+        <button type="button" class="btn btn-default" id="sbtncircuit4">Circuit 4</button>
+        <button type="button" class="btn btn-default" id="sbtncircuit5a">Circuit 5A</button>
+        <button type="button" class="btn btn-default" id="sbtncircuit5b">Circuit 5B</button>
+        <button type="button" class="btn btn-default" id="sbtncircuit5c">Circuit 5C</button>
+    </div>
+    </div>   
+
+<hr />
+    
+    <div class="row">
+        <div id="windchart" style="min-width: 310px; height: 400px; margin: 2em 2em;"></div>
+    </div>
+    
+    <div class="row loadbuttons">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" id="wbtntotal">Total</button>
+        <button type="button" class="btn btn-default" id="wbtn4kVSub">4kV East</button>
+        <button type="button" class="btn btn-default" id="wbtncircuit1">Circuit 1</button>
+        <button type="button" class="btn btn-default" id="wbtncircuit2">Circuit 2</button>
+        <button type="button" class="btn btn-default" id="wbtncircuit3">4kV West</button>
+        <button type="button" class="btn btn-default" id="wbtncircuit4">Circuit 4</button>
+        <button type="button" class="btn btn-default" id="wbtncircuit5a">Circuit 5A</button>
+        <button type="button" class="btn btn-default" id="wbtncircuit5b">Circuit 5B</button>
+        <button type="button" class="btn btn-default" id="wbtncircuit5c">Circuit 5C</button>
+
+    </div>
+    </div>
+
+<hr />
+<hr />
+
+    <div class="row">
+        <div id="batterychart" style="min-width: 310px; height: 400px; margin: 2em 2em;"></div>
+    </div>
+    
+    <div class="row loadbuttons">
+    <div class="btn-group">
+        <!--<button type="button" class="btn btn-primary" id="bbtntotal">Total</button>-->
+        <button type="button" class="btn btn-default" id="bbtn4kVSub">4kV East</button>
+        <button type="button" class="btn btn-default" id="bbtncircuit1">Circuit 1</button>
+        <button type="button" class="btn btn-default" id="bbtncircuit2">Circuit 2</button>
+        <button type="button" class="btn btn-default" id="bbtncircuit3">4kV West</button>
+        <button type="button" class="btn btn-default" id="bbtncircuit4">Circuit 4</button>
+        <button type="button" class="btn btn-default" id="bbtncircuit5a">Circuit 5A</button>
+        <button type="button" class="btn btn-default" id="bbtncircuit5b">Circuit 5B</button>
+        <button type="button" class="btn btn-default" id="bbtncircuit5c">Circuit 5C</button>
+
+    </div>
+    </div>
+            
+            
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+            <!--
+    <div class="row">
+        <div id="dynamicloadchart" style="min-width: 310px; height: 400px; margin: 2em 2em;"></div>
+    </div>
+
+-->
+    
+
+</div>
+    
+
+    
+    
+    
+
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/data.js"></script>
+<script src="http://code.highcharts.com/modules/drilldown.js"></script>
+
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="http://code.highcharts.com/modules/solid-gauge.js"></script>
+
+<script type="text/javascript" src="dataAlex.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+
+    
+</body>
+
+
+</html>
+
+
